@@ -1,0 +1,56 @@
+.students-container {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.student-search-card {
+  margin-bottom: 20px;
+}
+
+.student-form-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.student-form-grid label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.student-form-grid input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.student-table-wrapper {
+  margin-top: 20px;
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.student-table th,
+.student-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.student-table th {
+  background: #f3f5ff;
+}
+
+.student-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.student-actions button {
+  padding: 8px 12px;
+  border-radius: 10px;
+}

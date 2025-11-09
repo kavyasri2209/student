@@ -1,0 +1,39 @@
+.calendar-container {
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.calendar-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 16px;
+}
+
+.calendar-form-grid input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.calendar-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 18px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.calendar-table th {
+  background: #eef2ff;
+}

@@ -1,0 +1,7 @@
+.nav { background:#3B82F6; color:#fff; position: sticky; top:0; z-index: 20; }
+.nav-inner { display:flex; align-items:center; justify-content:space-between; }
+.brand { font-weight:800; font-size:1.1rem; color:#fff; }
+.links { display:flex; gap:16px; }
+.links a { color:#eaf1ff; padding:8px 10px; border-radius:8px; }
+.links a.active, .links a:hover { background:rgba(255,255,255,.18); color:#fff; }
+.auth { display:flex; gap:10px; align-items:center; }

@@ -1,0 +1,41 @@
+.grade-table-wrapper {
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grade-table th,
+.grade-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.grade-table th {
+  background: #f7f9ff;
+}
+
+.grade-input {
+  width: 80px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.grade-save-btn {
+  background: #3B82F6;
+  padding: 8px 12px;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.grade-save-btn:hover {
+  background: #3066cc;
+}

@@ -1,0 +1,45 @@
+.notice-form {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr auto;
+  gap: 12px;
+}
+
+.notice-form input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.notice-card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+.notice-date {
+  background: #e5edff;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #1e40af;
+  font-size: 0.8rem;
+}
+
+.notice-title {
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.notice-delete {
+  background: #ef4444;
+  padding: 8px 12px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.notice-delete:hover {
+  background: #d63232;
+}

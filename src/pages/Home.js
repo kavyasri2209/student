@@ -1,64 +1,43 @@
 import React from "react";
 import { FiUser, FiEdit, FiList, FiSearch } from "react-icons/fi";
+import StudentSection from "../components/StudentSection";
 import "./Home.css";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div className="home">
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo">StudentFlow</div>
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>Students</li>
-          <li>Attendance</li>
-          <li>Grades</li>
-          <li>Reports</li>
-        </ul>
-      </nav>
-
-      {/* Hero Section */}
+    <div>
       <section className="hero">
-        <h1>StudentFlow – Smart Student Management</h1>
-        <p>
-          A simple and powerful platform for schools and teachers to manage
-          student records, attendance, and grades efficiently.
-        </p>
+        <div className="container">
+          <h1>EduTrack</h1>
+          <p>Manage students, track attendance, record grades, view calendar, and post notices — all in one place.</p>
+        </div>
       </section>
 
-      {/* Features Section */}
-      <section className="features">
-        <div className="feature-card">
+      <section className="container grid grid-4">
+        <div className="card center">
           <FiUser className="icon" />
           <h3>Student Management</h3>
-          <p>Add, edit, and remove student records with ease.</p>
+          <p>Add, edit, and organize student records.</p>
         </div>
-
-        <div className="feature-card">
+        <div className="card center">
           <FiList className="icon" />
-          <h3>Attendance Tracking</h3>
-          <p>Mark daily attendance and view monthly reports.</p>
+          <h3>Attendance</h3>
+          <p>Mark daily attendance and track %.</p>
         </div>
-
-        <div className="feature-card">
+        <div className="card center">
           <FiEdit className="icon" />
-          <h3>Grade Management</h3>
-          <p>Track subject-wise performance and generate grade sheets.</p>
+          <h3>Grades</h3>
+          <p>Subject-wise grading and performance.</p>
         </div>
-
-        <div className="feature-card">
+        <div className="card center">
           <FiSearch className="icon" />
           <h3>Search & Filter</h3>
-          <p>Quickly find students by grade or performance.</p>
+          <p>Find students fast with filters.</p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 StudentFlow | Built by React Rangers 💻</p>
-      </footer>
+      {/* Student quick dashboard */}
+      <StudentSection />
     </div>
   );
-};
-
-export default Home;
+}
