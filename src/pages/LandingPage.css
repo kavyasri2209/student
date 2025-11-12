@@ -306,3 +306,187 @@ body{
   border-radius:10px;
   margin-bottom:10px;
 }
+#heroCarousel img {
+  height: 420px;
+  object-fit: cover;
+}
+/* Hero Carousel Image */
+.hero-img {
+  height: 620px;
+  object-fit: cover;
+  /* filter: brightness(80%);  */
+}
+
+/* Text inside carousel */
+.carousel-caption {
+  bottom: 22%;
+}
+
+.carousel-caption h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+}
+/* ---------- 4 BLOCKS UNDER CAROUSEL ---------- */
+
+.carousel-bottom-box {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -50px;     /* Pull upward under carousel */
+  position: relative;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Each Block */
+.info-block {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+.info-block h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.info-block p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.info-block a {
+  text-decoration: none;
+  color: #ff7b47;
+  font-weight: 600;
+}
+
+/* Optional colors like in your sample image */
+.b1 { background: #e3f2fd; }     /* Light Blue */
+.b2 { background: #fff9c4; }     /* Light Yellow */
+.b3 { background: #e8f5e9; }     /* Light Green */
+.b4 { background: #ffecb3; }     /* Light Orange */
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .carousel-bottom-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel-bottom-box {
+    grid-template-columns: 1fr;
+  }
+}
+/* ---------- CIRCLE IMAGE + TEXT SECTION ---------- */
+
+.circle-section {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT SIDE IMAGE GROUP */
+.circle-left {
+  position: relative;
+  width: 50%;
+  min-height: 350px;
+}
+
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Circle sizes */
+.big-circle {
+  width: 260px;
+  height: 260px;
+  top: 20px;
+  left: 40px;
+  border: 6px solid #ff8f4a;
+}
+
+.small-circle {
+  width: 110px;
+  height: 110px;
+  border: 4px solid #ffd180;
+}
+
+/* positions for small circles */
+.sc1 { top: 0; right: 80px; }
+.sc2 { bottom: 60px; right: 0; }
+.sc3 { top: 200px; left: 0; }
+
+/* ---------- RIGHT SIDE TEXT ---------- */
+.circle-right {
+  width: 45%;
+}
+
+.circle-right h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.circle-right p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.discover-btn {
+  padding: 12px 28px;
+  background: #ff8f4a;
+  border: none;
+  color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.discover-btn:hover {
+  background: #ff7a20;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .circle-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .circle-left, .circle-right {
+    width: 100%;
+  }
+}
