@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FiMenu, FiLogIn, FiArrowRight, FiShield, FiZap, FiCheckCircle,
   FiUsers, FiBookOpen, FiBarChart2, FiCalendar, FiBell
@@ -27,9 +28,9 @@ const LandingPage = () => {
         </nav>
 
         <div className="lp-actions">
-          <button className="lp-btn ghost">
+          <Link to="/login" className="lp-btn ghost">
             <FiLogIn /> Login
-          </button>
+          </Link>
 
           <button className="lp-btn primary">
             Start Free <FiArrowRight />
